@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Auto Disliker",
+  "description": "Automatically dislike videos on YouTube",
+  "version": "0.0.0.1",
+  "icons": {
+      "16": "/icons/16x16.png",
+      "48": "/icons/48x48.png",
+      "128": "/icons/128x128.png"
+  },
+  "action": {
+      "default_icon": "/icons/48x48.png",
+      "default_popup": "/html/popup.html"
+  },
+  "content_scripts": [
+      {
+          "matches": [
+              "https://www.youtube.com/*"
+          ],
+          "js": [
+              "/js/content.js"
+          ],
+          "run_at": "document_idle"
+      }
+  ],
+  "permissions": [
+      "storage"
+  ]
+}

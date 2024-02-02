@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        background-color: #f0f0f0;
+        color: #fff;
+        text-align: center; 
+        width: 275px;
+        margin: auto; 
+        font-family: 'Arial', sans-serif;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #fff;
+          color: #fff;
+        }
+      }
+
+      h1, h2, label, p {
+        font-size: 18px;
+        color: #000000;
+        margin: 5px 0;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        margin: 10px 0;
+      }
+
+      input {
+        margin: 5px 0;
+        padding: 8px;
+        font-size: 14px;
+      }
+
+      button {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #ed1c23;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      input[type="checkbox"] {
+        background-color: #000000;
+        color: #fff;
+      }
+
+      input[type="number"] {
+        width: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <img src="/icons/48x48.png" alt="youtube-auto-disliker" />
+    </h1>
+    <h2>youtube-auto-disliker</h2>
+    <label for="toggleEnable">enable:
+      <input type="checkbox" id="toggleEnable" name="toggleEnable" checked/>
+    </label>
+    <br />
+    <input id="delay" type="number" value="10" min="1" />
+    <button id="setDelay">save</button>
+    <p id="version"></p>
+    <p>by enoobis</p>
+    <script src="../js/popup.js"></script>
+  </body>
+</html>
